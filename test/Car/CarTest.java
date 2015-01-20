@@ -44,7 +44,7 @@ public class CarTest {
     
     @Test
     public void testEngine(){
-        when(mockEngine.startEngine()).thenReturn(true);
+        when(mockEngine.fireStartMotor()).thenReturn(true);
         SUT.startCar();
         SUT.stopCar();
     }

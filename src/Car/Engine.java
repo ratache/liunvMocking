@@ -12,15 +12,13 @@ package Car;
 public class Engine {
     boolean started = false;
     
-    boolean startEngine(){
+    boolean fireStartMotor(){
         if(!started){
-            return true;
+            started = true;
+            return started;
         }
-        return false;
-    }
-
-    boolean stopEngine() {
-        return false;
+        started = false;
+        return started;
     }
     
 }

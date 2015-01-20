@@ -38,11 +38,11 @@ public class Car {
     }
 
     void startCar() {
-        engine.startEngine();
+        engine.fireStartMotor();
     }
 
     void stopCar() {
-        engine.stopEngine();
+        engine.fireStartMotor();
     }
     
 }
