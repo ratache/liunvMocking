@@ -32,7 +32,19 @@ public class Car {
         if(chassi!=null && rightFront != null && leftFront != null 
                 && leftBack != null && rightBack != null && engine != null 
                 &&  transmission != null){
-            return true;
+            boolean x;
+            x = transmission.getStatus();
+            x = leftBack.getStatus();
+            x = rightBack.getStatus();
+            x = leftFront.getStatus();
+            x = rightFront.getStatus();
+            x = chassi.getStatus();
+            x = engine.getStatus();
+            
+            if(x)
+                return true;
+            else
+                return false;
         }
         return false;
     }

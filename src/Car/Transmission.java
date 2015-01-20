@@ -10,5 +10,9 @@ package Car;
  * @author UndeadAmilo
  */
 public class Transmission {
+
+    boolean getStatus() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

@@ -49,6 +49,13 @@ public class CarTest {
         SUT.stopCar();
         
         verify(mockEngine, times(2)).fireStartMotor();
+        
+        verify(mockLb, times(1)).getStatus();
+        verify(mockRb, times(1)).getStatus();
+        verify(mockLf, times(1)).getStatus();
+        verify(mockRf, times(1)).getStatus();
+        verify(mockChassi, times(1)).getStatus();
+        verify(mockT, times(1)).getStatus();
     }
     
 }
