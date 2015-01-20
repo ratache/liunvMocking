@@ -47,6 +47,8 @@ public class CarTest {
         when(mockEngine.fireStartMotor()).thenReturn(true);
         SUT.startCar();
         SUT.stopCar();
+        
+        verify(mockEngine, times(2)).fireStartMotor();
     }
     
 }
