@@ -28,8 +28,13 @@ public class Car {
         transmission = T;
     }
 
-    Object getStatus() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    boolean getStatus() {
+        if(chassi!=null && rightFront != null && leftFront != null 
+                && leftBack != null && rightBack != null && engine != null 
+                &&  transmission != null){
+            return true;
+        }
+        return false;
     }
     
 }
