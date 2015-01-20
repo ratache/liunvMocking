@@ -46,6 +46,7 @@ public class CarTest {
     public void testEngine(){
         when(mockEngine.startEngine()).thenReturn(true);
         SUT.startCar();
+        SUT.stopCar();
     }
     
 }

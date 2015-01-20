@@ -40,5 +40,9 @@ public class Car {
     void startCar() {
         engine.startEngine();
     }
+
+    void stopCar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
