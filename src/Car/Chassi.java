@@ -10,9 +10,10 @@ package Car;
  * @author UndeadAmilo
  */
 public class Chassi {
+    boolean integrity = true;
 
     boolean getStatus() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return integrity;
     }
     
 }

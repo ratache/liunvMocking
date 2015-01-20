@@ -34,19 +34,30 @@ public class CarTest {
         mockRb = mock(Wheel.class);
         mockT = mock(Transmission.class);
         mockEngine = mock(Engine.class);
+       
         SUT = new Car(mockChassi, mockLf, mockRf, mockLb, mockRb, mockT, mockEngine);   
+        
+        when(mockRb.getStatus()).thenReturn(true);
+        when(mockLb.getStatus()).thenReturn(true);
+        when(mockLf.getStatus()).thenReturn(true);
+        when(mockRf.getStatus()).thenReturn(true);
+        when(mockChassi.getStatus()).thenReturn(true);
+        when(mockT.getStatus()).thenReturn(true);
+        when(mockEngine.getStatus()).thenReturn(true);
     }
 
     @Test
     public void testBuildtCar() {
-        assertEquals(SUT.getStatus(), true);
+        assertEquals(true, SUT.getStatus());
     }
     
     @Test
     public void testEngine(){
         when(mockEngine.fireStartMotor()).thenReturn(true);
+        
         SUT.startCar();
         SUT.stopCar();
+        SUT.getStatus();
         
         verify(mockEngine, times(2)).fireStartMotor();
         

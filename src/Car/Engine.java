@@ -11,9 +11,10 @@ package Car;
  */
 public class Engine {
     boolean started = false;
+    boolean engineStatus = true;
     
     boolean fireStartMotor(){
-        if(!started){
+        if(!started && engineStatus){
             started = true;
             return started;
         }
@@ -22,7 +23,7 @@ public class Engine {
     }
 
     boolean getStatus() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return engineStatus;
     }
     
 }
