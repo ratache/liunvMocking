@@ -36,10 +36,6 @@ public class CarTest {
         mockEngine = mock(Engine.class);
         SUT = new Car(mockChassi, mockLf, mockRf, mockLb, mockRb, mockT, mockEngine);   
     }
-    
-    @After
-    public void tearDown() {
-    }
 
     @Test
     public void testBuildCar() {
