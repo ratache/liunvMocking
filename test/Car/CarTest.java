@@ -38,8 +38,8 @@ public class CarTest {
     }
 
     @Test
-    public void testBuildCar() {
-        
+    public void testBuildtCar() {
+        assertEquals(SUT.getStatus(), true);
     }
     
 }

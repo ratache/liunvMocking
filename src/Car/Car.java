@@ -27,5 +27,9 @@ public class Car {
         engine = E;
         transmission = T;
     }
+
+    Object getStatus() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
