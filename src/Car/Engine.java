@@ -18,5 +18,9 @@ public class Engine {
         }
         return false;
     }
+
+    boolean stopEngine() {
+        return false;
+    }
     
 }
