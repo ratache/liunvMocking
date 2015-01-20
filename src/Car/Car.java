@@ -10,9 +10,22 @@ package Car;
  * @author UndeadAmilo
  */
 public class Car {
+    private Chassi chassi;
+    private Wheel rightFront;
+    private Wheel leftFront; 
+    private Wheel leftBack;
+    private Wheel rightBack;
+    private Transmission transmission;
+    private Engine engine ;
 
-    Car(Chassi mockChassi, Wheel mockLf, Wheel mockRf, Wheel mockLb, Wheel mockRb, Transmission mockT, Engine mockEngine) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    Car(Chassi c, Wheel lf, Wheel rf, Wheel lb, Wheel rb, Transmission T, Engine E) {
+        chassi = c;
+        rightFront = rf;
+        rightBack = rb;
+        leftFront = lf;
+        leftBack = lb;
+        engine = E;
+        transmission = T;
     }
     
 }
