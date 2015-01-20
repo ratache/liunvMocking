@@ -25,7 +25,8 @@ public class CarTest {
     private Engine mockEngine ;
     private Car SUT;
     
-    public CarTest() {
+    @Before
+    public void setUp() {
         mockChassi = mock(Chassi.class);
         mockLf = mock(Wheel.class);
         mockRf = mock(Wheel.class);
@@ -34,10 +35,7 @@ public class CarTest {
         mockT = mock(Transmission.class);
         mockEngine = mock(Engine.class);
         SUT = new Car();
-    }
-    
-    @Before
-    public void setUp() {
+        
     }
     
     @After
