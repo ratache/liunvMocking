@@ -36,5 +36,9 @@ public class Car {
         }
         return false;
     }
+
+    void startCar() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

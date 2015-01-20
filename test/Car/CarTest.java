@@ -42,4 +42,10 @@ public class CarTest {
         assertEquals(SUT.getStatus(), true);
     }
     
+    @Test
+    public void testEngine(){
+        when(mockEngine.startEngine()).thenReturn(true);
+        SUT.startCar();
+    }
+    
 }

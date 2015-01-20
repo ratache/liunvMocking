@@ -10,5 +10,13 @@ package Car;
  * @author UndeadAmilo
  */
 public class Engine {
+    boolean started = false;
+    
+    boolean startEngine(){
+        if(!started){
+            return true;
+        }
+        return false;
+    }
     
 }
