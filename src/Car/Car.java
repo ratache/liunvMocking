@@ -10,5 +10,9 @@ package Car;
  * @author UndeadAmilo
  */
 public class Car {
+
+    Car(Chassi mockChassi, Wheel mockLf, Wheel mockRf, Wheel mockLb, Wheel mockRb, Transmission mockT, Engine mockEngine) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }

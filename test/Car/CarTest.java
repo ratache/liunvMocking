@@ -34,7 +34,7 @@ public class CarTest {
         mockRb = mock(Wheel.class);
         mockT = mock(Transmission.class);
         mockEngine = mock(Engine.class);
-        SUT = new Car();
+        SUT = new Car(mockChassi, mockLf, mockRf, mockLb, mockRb, mockT, mockEngine);
         
     }
     
@@ -43,7 +43,8 @@ public class CarTest {
     }
 
     @Test
-    public void testSomeMethod() {
+    public void testBuildCar() {
+        
     }
     
 }
