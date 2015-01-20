@@ -14,6 +14,7 @@ import static org.mockito.Mockito.*;
 /**
  *
  * @author UndeadAmilo
+ * dvs PER JOHANSSON 830716 för komplettering av assignment 1 i mjukvarutestning.
  */
 public class CarTest {
     private Chassi mockChassi;
